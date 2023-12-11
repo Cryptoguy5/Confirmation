@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 100vh;
+            background-color: aqua;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main {
+            height: 60%;
+            width: 45%;
+            background-color: white;
+        }
+
+        .top {
+            height: 20%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        .middle {
+            height: 50%;
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .bottom {
+            width: 100%;
+            height: 30%;
+            display: flex;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        img {
+            height: 30px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        p {
+            margin-top: 0;
+            line-height: 30px;
+            font-size: 18px;
+        }
+
+        span {
+            color: blue;
+            text-decoration: underline;
+        }
+
+        .copyright {
+            height: 15px;
+            margin-bottom: 10px;
+            margin-right: 2px;
+            margin-left: 0;
+        }
+
+        .abstract {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+        }
+
+        .section {
+            height: 100%;
+            width: 50%;
+        }
+
+        .grey {
+            font-size: 12px;
+            color: gray;
+            line-height: 10px;
+        }
+
+        .underline {
+            text-decoration: underline;
+        }
+
+        button {
+            background-color: white;
+            border: 3px solid black;
+            height: 50%;
+            width: 50%;
+            text-align: center;
+            padding-left: 10px;
+            padding-right: 10px;
+            font-weight: bold;
+        }
+
+        .flex {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @media (max-width: 680px) {
+            .main {
+                width: 100%;
+                height: 75%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+       <div class="top">
+        <img src="./edit.png" alt="edit">
+        <h2>Abstract</h2>
+       </div>
+       <div class="middle">
+        <p>Hi there, <br />
+            Thank you for using the Abstract Annual Business plan!
+            We've successfully processed your payment of $650.00.
+        </p>
+        <p>
+            You can access your subscription information from <span>your settings page.</span>
+            If you have any further questions please visit our <span>help</span> center or <span>contact support.</span> 
+        </p>
+        <hr />
+       </div>
+       <div class="bottom">
+        <div class="section">
+        <div class="abstract">
+           <img class="copyright grey" src="./copyright.png" alt="copyright">
+           <p class="grey underline">Abstract 2017</p>
+        </div>
+        <p class="grey">2567 Mission Street, San Francisco, CA 94110, USA</p>
+        <p class="grey">Follow us on <span>Twitter</span>, <span>LinkedIn</span>, or <span>Facebook</span></p>
+       </div>
+       <div class="section flex">
+        <button>Contact Support</button>
+       </div>
+      </div>
+    </div>
+</body>
+</html>
